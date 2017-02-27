@@ -29,3 +29,17 @@ v_min = (x_min,y_min,z_min)
 代码提交到您个人的git账户，发送链接地址给面试官即可
 
 需注意data.txt数据集合较大时的查询性能
+
+
+
+
+编译：
+clone项目之后，使用VS打开interview-microscene.sln，随后在VS中正常编译即可（推荐）。
+
+或者，在interview-microscene/下使用cmaka编译
+
+	mkdir build
+	cd build
+	cmake ..
+	make
+	./interview
