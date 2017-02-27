@@ -8,15 +8,15 @@ interview for microscene
 
 计算出包含全部N个点的最小立方体（立方体边与三轴平行或垂直，下同）
 
-(v_min,v_max) =（v_min,y_min,z_min,x_max,y_max,z_max）= model.GetBound(V)
+	(v_min,v_max) =（v_min,y_min,z_min,x_max,y_max,z_max）= model.GetBound(V)
 
 给定任意空间点v_0 = (x0,y0,z0）和数量X，检索出距离v_0最近的X个空间点的坐标
 
-V_near = (v1,...,vx) = model.GetNearBy(v_0,X)
+	V_near = (v1,...,vx) = model.GetNearBy(v_0,X)
 
 给定任意空间范围 b = （v_min，v_max)检索出包含在这个空间范围内的空间点坐标 V_in = model.GetContained(b)
 
-v_min = (x_min,y_min,z_min)
+	v_min = (x_min,y_min,z_min)
 
 说明：
 
@@ -34,7 +34,7 @@ v_min = (x_min,y_min,z_min)
 
 
 编译：
-clone项目之后，使用VS打开interview-microscene.sln，随后在VS中正常编译即可（推荐）。
+clone项目之后，使用VS打开interview-microscene.sln，随后在VS (2013及以上)中正常编译即可（推荐）。
 
 或者，在interview-microscene/下使用cmaka编译
 
