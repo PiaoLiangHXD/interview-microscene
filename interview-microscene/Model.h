@@ -8,6 +8,7 @@
 #pragma once
 
 #include "Point3d.h"
+#include "Distance.h"
 #include<fstream>
 
 class Model{
@@ -20,15 +21,23 @@ public:
 
 	void GetData();
 
+	//minmax in x,y,z for GetBound
+	void MinMax_x(int, int, double&, double&);
+	void MinMax_y(int, int, double&, double&);
+	void MinMax_z(int, int, double&, double&);
 	/* the smallest cube containing all N points
 	 * input: N 3d points
 	 * output: a cube (2 3d points)
 	*/ 
 	void GetBound();
 
-	/* the nearest X points of point v_0 
-	 * input: 3d point v_0, number X
-	 * output: X points
+	//Heap sort for GetNearBy
+	void MinHeapify(vector<Distance> &,int,int);
+	void HeapSort(vector<Distance> &, int);
+
+	/* the nearest X points of point v_0
+	* input: 3d point v_0, number X
+	* output: X points
 	*/
 	Model GetNearBy(const Point3d, int);
 

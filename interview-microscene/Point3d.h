@@ -37,8 +37,22 @@ public:
 		z = a.z;
 	}
 
+	/* The distance with another point
+	 * input: a point a
+	 * output: distance in double
+	*/
 	double Distance(const Point3d & a){
 		return sqrt(pow(x - a.x, 2) + pow(y - a.y, 2) + pow(z - a.z, 2));
+	}
+
+	void swap(Point3d &a){
+		Point3d temp(x, y, z);
+		x = a.x;
+		y = a.y;
+		z = a.z;
+		a.x = temp.x;
+		a.y = temp.y;
+		a.z = temp.z;
 	}
 
 	void print(){

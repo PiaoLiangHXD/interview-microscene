@@ -78,6 +78,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Distance.h" />
     <ClInclude Include="Model.h" />
     <ClInclude Include="Point3d.h" />
   </ItemGroup>
